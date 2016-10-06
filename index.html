@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Adventure to Fiesta Land! ~debugging in Technicolor</title>
+  <script src="//rawgit.com/SimonWaldherr/ColorConverter.js/master/colorconverter.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//unpkg.com/tachyons@4.5.3/css/tachyons.min.css" />
+  <link rel="stylesheet" href="//rawgit.com/isagalaev/highlight.js/master/src/styles/monokai-sublime.css">
+  <style type="text/css">
+    body {
+      padding: 20px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    .iphone-outer {
+      background-color: black;
+      border: medium solid gray;
+      border-radius: 10px;
+      text-align: center;
+      display: inline-block;
+      padding: 40px 10px 0 10px;
+    }
+    
+    .iphone-screen {
+      width: 320px;
+      height: 568px;
+      background-color: white;
+      text-align: center;
+      overflow-y: scroll;
+    }
+    
+    .iphone-home {
+      border: thin solid gray;
+      border-radius: 100%;
+      margin: 10px;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+    }
+    
+    .bordered {
+      /*border: thin solid #d00ded;*/
+      text-align: center;
+    }
+    
+    .padded {
+      padding: 2px;
+    }
+    
+    .box {
+      width: 20%;
+      height: 64px;
+      display: inline-block;
+    }
+    
+    pre>code {
+      padding: 20px !important;
+    }
+    
+    .adv-hide {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cf">
+    <div class="fl w-70">
+      <div>
+        <a href="javascript:retreat()">◀</a>
+        <a href="javascript:advance()">▶</a>
+      </div>
+      <div class="adv-1 adv-hide">
+        <a href="javascript:greys()">
+          <pre><code id="greyscode"></code></pre>
+        </a>
+      </div>
+      <div class="adv-2 adv-hide">
+        <a href="javascript:rainbow()">
+          <pre><code id="rainbowcode"></code></pre>
+        </a>
+      </div>
+      <div class="adv-3 adv-hide">
+        <a href="javascript:fiesta()">
+          <pre><code id="fiestacode"></code></pre>
+        </a>
+      </div>
+    </div>
+    <div class="fl">
+      <div class="iphone-outer adv-0 adv-hide">
+        <div class="iphone-screen">
+          <div class="bordered padded">
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+            <div class="bordered">
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+              <div class="bordered box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="iphone-home"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    /* global colorconv hljs */
+    function recolour(tripletMapping) {
+      var elems = document.body.getElementsByClassName('iphone-screen').item(0).getElementsByTagName('div')
+      for (var i = 0; i < elems.length; i++) {
+        var elem = elems.item(i)
+        var triplet = tripletMapping(i, elems)
+        elem.setAttribute('style', 'background: #' + colorconv.HSL2HEX([triplet.H, triplet.S, triplet.L]))
+      }
+    }
+
+    function greys() {
+      recolour((i, elems) => ({
+        H: 0,
+        S: 0,
+        L: i * 100 / elems.length
+      }))
+    }
+
+    function rainbow() {
+      recolour((i, elems) => ({
+        H: i * 360 / elems.length,
+        S: 100,
+        L: 50
+      }))
+    }
+
+    function fiesta() {
+      const PHI = (1 + Math.sqrt(5)) / 2
+      recolour(i => ({
+        H: (i * PHI * 360) % 360,
+        S: 100,
+        L: 50
+      }))
+    }
+
+    document.getElementById('greyscode').textContent = greys
+    document.getElementById('rainbowcode').textContent = rainbow
+    document.getElementById('fiestacode').textContent = fiesta
+    hljs.initHighlightingOnLoad();
+
+    var advCounter = 0;
+
+    function advance() {
+      var elems = document.getElementsByClassName('adv-' + advCounter)
+      if (!elems.length) {
+        return
+      }
+      
+      for (var i = 0; i < elems.length; i++) {
+        elems.item(i).classList.remove('adv-hide')
+      }
+      advCounter++
+    }
+    function retreat() {
+      if (advCounter > 0) {
+        advCounter--
+      }
+      
+      var elems = document.getElementsByClassName('adv-' + advCounter)
+      for (var i = 0; i < elems.length; i++) {
+        elems.item(i).classList.add('adv-hide')
+      }
+    }
+
+    document.addEventListener('keydown', e => (e.keyCode == 39) && advance())
+    document.addEventListener('keydown', e => (e.keyCode == 37) && retreat())
+  </script>
+
+</body>
+
+</html>
